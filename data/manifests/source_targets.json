@@ -1,0 +1,14 @@
+{
+  "status": "complete",
+  "row_count": 336,
+  "expected_rows": 336,
+  "missing_port_months": [],
+  "snapshot_id": "bts-target-panel-bc45fb724be79eb2",
+  "source_snapshot_ids": [
+    "bts_freight_indicators-8a79c90e61348bb7"
+  ],
+  "first_release_known_count": 0,
+  "path": "data/curated/official_teu_monthly.parquet",
+  "sha256": "17ff43e2b86552675fe41cc87d2a5db89b99ba8a316283bff5b3acccabf4e373",
+  "schema_hash": "cb2f7c153a465a85fc9b12c5a4e6dd7fdfe2e995eab52bb308d45031be3a5a87"
+}

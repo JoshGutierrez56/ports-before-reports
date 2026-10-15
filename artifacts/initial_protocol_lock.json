@@ -1,0 +1,9 @@
+{
+  "lock_kind": "initial_before_data_exploration",
+  "created_at_utc": "2026-10-15T19:39:01.453047+00:00",
+  "brief_sha256": "dbd5fdadfda36ac0d8232748ef0a787df4baf1d36e121bd4058c05e227bcebbc",
+  "protocol_sha256": "4e5e34f3817f97d89a333cac03c8a4e7c7408fd9d25c9fe626e50c4e9d50ecdb",
+  "config_sha256": "514fd50cd40e00d628a281ab204f8bd87743938dc9515e71035d7e58d6579d01",
+  "test_results_opened": false,
+  "final_evaluation_lock": false
+}

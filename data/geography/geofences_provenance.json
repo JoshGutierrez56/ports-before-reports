@@ -1,0 +1,347 @@
+{
+  "sources": [
+    {
+      "gateway_id": "san_pedro_bay",
+      "url": "https://coast.noaa.gov/arcgis/rest/services/OceanReports/DesignatedAnchorageAreas/MapServer/0/query?f=geojson&where=1%3D1&geometry=-118.42%2C33.53%2C-118.02%2C33.88&geometryType=esriGeometryEnvelope&inSR=4326&outSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&orderByFields=OBJECTID",
+      "sha256": "3144de826050f82cf6ff75999f0f5bc8a32f50fd87ae652cb8cc67223a19bd68",
+      "source_count": 21,
+      "license": "US federal source; attributed NOAA/USCG",
+      "retrieved_at_utc": "2026-10-15T19:50:34.799404+00:00"
+    },
+    {
+      "gateway_id": "new_york_new_jersey",
+      "url": "https://coast.noaa.gov/arcgis/rest/services/OceanReports/DesignatedAnchorageAreas/MapServer/0/query?f=geojson&where=1%3D1&geometry=-74.28%2C40.38%2C-73.75%2C40.83&geometryType=esriGeometryEnvelope&inSR=4326&outSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&orderByFields=OBJECTID",
+      "sha256": "08a373751fa8f145d6db2c2b11980ea1949493a1a98cbddc41c47d449ded0668",
+      "source_count": 72,
+      "license": "US federal source; attributed NOAA/USCG",
+      "retrieved_at_utc": "2026-10-15T19:50:36.712729+00:00"
+    },
+    {
+      "gateway_id": "savannah",
+      "url": "https://coast.noaa.gov/arcgis/rest/services/OceanReports/DesignatedAnchorageAreas/MapServer/0/query?f=geojson&where=1%3D1&geometry=-81.23%2C31.7%2C-80.65%2C32.22&geometryType=esriGeometryEnvelope&inSR=4326&outSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&orderByFields=OBJECTID",
+      "sha256": "104b40b14fb723720d959a75222c3c13c6e20b00fd4aa726ef4c66578ffe0962",
+      "source_count": 1,
+      "license": "US federal source; attributed NOAA/USCG",
+      "retrieved_at_utc": "2026-10-15T19:50:38.694794+00:00"
+    }
+  ],
+  "geometry_sha256": "b62307df88f2aca6ccdc21c273d78c6f16c4ea0148fc4d1f68d10966191b62ed",
+  "coast_pilot_sources": {
+    "san_pedro_bay": "https://nauticalcharts.noaa.gov/publications/coast-pilot/files/cp7/CPB7_C04_WEB.pdf",
+    "new_york_new_jersey": "https://nauticalcharts.noaa.gov/publications/coast-pilot/files/cp2/CPB2_C11_WEB.pdf",
+    "savannah": "https://nauticalcharts.noaa.gov/publications/coast-pilot/files/cp4/CPB4_C07_WEB.pdf"
+  },
+  "method": {
+    "version": "scsi-geofences-v1",
+    "created_at_utc": "2026-10-15T19:50:38.698795+00:00",
+    "crs": "EPSG:4326",
+    "local_projected_crs": {
+      "san_pedro_bay": "EPSG:32611",
+      "new_york_new_jersey": "EPSG:32618",
+      "savannah": "EPSG:32617"
+    },
+    "review": "Agent-assisted, not independent hydrographic validation",
+    "limitations": "Current geometry vintage; approximate berth/channel corridors; cargo class is not containership identity; coastal acquisition bounds truncate distant anchorage"
+  },
+  "terminal_interpretations": {
+    "san_pedro_bay": [
+      [
+        "LA APM Pier 400",
+        [
+          [
+            -118.249,
+            33.72
+          ],
+          [
+            -118.243,
+            33.735
+          ],
+          [
+            -118.239,
+            33.739
+          ]
+        ]
+      ],
+      [
+        "LA Fenix Pier 300",
+        [
+          [
+            -118.232,
+            33.733
+          ],
+          [
+            -118.23,
+            33.744
+          ]
+        ]
+      ],
+      [
+        "LA Everport",
+        [
+          [
+            -118.235,
+            33.751
+          ],
+          [
+            -118.241,
+            33.757
+          ]
+        ]
+      ],
+      [
+        "LA Yusen",
+        [
+          [
+            -118.254,
+            33.749
+          ],
+          [
+            -118.263,
+            33.755
+          ]
+        ]
+      ],
+      [
+        "LA TraPac",
+        [
+          [
+            -118.267,
+            33.765
+          ],
+          [
+            -118.251,
+            33.765
+          ]
+        ]
+      ],
+      [
+        "LA West Basin",
+        [
+          [
+            -118.278,
+            33.755
+          ],
+          [
+            -118.278,
+            33.768
+          ]
+        ]
+      ],
+      [
+        "LB Pier J",
+        [
+          [
+            -118.19,
+            33.739
+          ],
+          [
+            -118.18,
+            33.746
+          ],
+          [
+            -118.176,
+            33.751
+          ]
+        ]
+      ],
+      [
+        "LB Pier G",
+        [
+          [
+            -118.201,
+            33.753
+          ],
+          [
+            -118.194,
+            33.759
+          ]
+        ]
+      ],
+      [
+        "LB Pier E",
+        [
+          [
+            -118.216,
+            33.753
+          ],
+          [
+            -118.217,
+            33.766
+          ]
+        ]
+      ],
+      [
+        "LB Pier T",
+        [
+          [
+            -118.234,
+            33.754
+          ],
+          [
+            -118.236,
+            33.768
+          ]
+        ]
+      ],
+      [
+        "LB Pier A",
+        [
+          [
+            -118.204,
+            33.773
+          ],
+          [
+            -118.204,
+            33.783
+          ]
+        ]
+      ],
+      [
+        "LB Pier C",
+        [
+          [
+            -118.212,
+            33.77
+          ],
+          [
+            -118.212,
+            33.779
+          ]
+        ]
+      ]
+    ],
+    "new_york_new_jersey": [
+      [
+        "Port Newark south quay",
+        [
+          [
+            -74.151,
+            40.674
+          ],
+          [
+            -74.139,
+            40.674
+          ]
+        ]
+      ],
+      [
+        "Port Elizabeth north quay",
+        [
+          [
+            -74.159,
+            40.67
+          ],
+          [
+            -74.144,
+            40.67
+          ]
+        ]
+      ],
+      [
+        "Port Elizabeth east quay",
+        [
+          [
+            -74.141,
+            40.67
+          ],
+          [
+            -74.143,
+            40.658
+          ]
+        ]
+      ],
+      [
+        "Port Jersey Bayonne",
+        [
+          [
+            -74.087,
+            40.662
+          ],
+          [
+            -74.073,
+            40.666
+          ]
+        ]
+      ],
+      [
+        "Howland Hook",
+        [
+          [
+            -74.182,
+            40.644
+          ],
+          [
+            -74.18,
+            40.638
+          ]
+        ]
+      ],
+      [
+        "Red Hook",
+        [
+          [
+            -74.014,
+            40.683
+          ],
+          [
+            -74.017,
+            40.679
+          ]
+        ]
+      ]
+    ],
+    "savannah": [
+      [
+        "Garden City container berths 1-6",
+        [
+          [
+            -81.133,
+            32.115
+          ],
+          [
+            -81.1345,
+            32.123
+          ],
+          [
+            -81.139,
+            32.1325
+          ]
+        ]
+      ],
+      [
+        "Garden City northern container berths",
+        [
+          [
+            -81.139,
+            32.1325
+          ],
+          [
+            -81.145,
+            32.1425
+          ]
+        ]
+      ]
+    ]
+  },
+  "enc_refinement": [
+    {
+      "path": "geofences_enc_84_san_pedro_bay.geojson",
+      "sha256": "743bbb2936da5c8ad93271291901d2721c12b025da6741b323b4ea7fe85e8681",
+      "source_url": "https://encdirect.noaa.gov/arcgis/rest/services/encdirect/enc_harbour/MapServer/84",
+      "server_count": 133
+    },
+    {
+      "path": "geofences_enc_84_savannah_terminal.geojson",
+      "sha256": "1ce3d65d6178ed463cecaf172b0855823a2924f3205c5ed0e971982219f99942",
+      "source_url": "https://encdirect.noaa.gov/arcgis/rest/services/encdirect/enc_harbour/MapServer/84",
+      "server_count": 52
+    },
+    {
+      "path": "geofences_enc_179_new_york_new_jersey.geojson",
+      "sha256": "4a135fe68ace41a72992a54f026e3fbd30e3664cd305e6342b08ea22baf70e21",
+      "source_url": "https://encdirect.noaa.gov/arcgis/rest/services/encdirect/enc_harbour/MapServer/179",
+      "server_count": 5
+    }
+  ],
+  "refinement": "January pilot visual audit found hand-locator undercoverage; supplemented LA/Savannah interpreted corridors with NOAA ENC outlines and replaced NY named terminals with actual facility outlines, without changing speed/gap/persistence or forecast design"
+}

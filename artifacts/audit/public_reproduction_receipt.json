@@ -1,0 +1,162 @@
+{
+  "status": "reproduced_public_metrics",
+  "created_at_utc": "2026-10-15T22:13:55.927613+00:00",
+  "metric_rows": 30,
+  "forecast_rows": 720,
+  "primary_comparisons": 2,
+  "bootstrap_replicates_per_comparison_and_block": 10000,
+  "protocol_sha256": "1d853f3d8a9e9185cbaad64b44d20d7630a239c2bf45ac405fd8e90e9400fda0",
+  "source_acquisition_or_refitting": false,
+  "checks": [
+    {
+      "experiment_id": "lag7_release60",
+      "model_id": "seasonal_naive",
+      "fields_reproduced": 10
+    },
+    {
+      "experiment_id": "lag7_release60",
+      "model_id": "released_target_ridge",
+      "fields_reproduced": 10
+    },
+    {
+      "experiment_id": "lag7_release60",
+      "model_id": "aggregate_activity_ridge",
+      "fields_reproduced": 10
+    },
+    {
+      "experiment_id": "lag7_release60",
+      "model_id": "geography_ridge",
+      "fields_reproduced": 10
+    },
+    {
+      "experiment_id": "lag7_release60",
+      "model_id": "simple_calls_to_teu",
+      "fields_reproduced": 10
+    },
+    {
+      "experiment_id": "lag7_release90",
+      "model_id": "seasonal_naive",
+      "fields_reproduced": 10
+    },
+    {
+      "experiment_id": "lag7_release90",
+      "model_id": "released_target_ridge",
+      "fields_reproduced": 10
+    },
+    {
+      "experiment_id": "lag7_release90",
+      "model_id": "aggregate_activity_ridge",
+      "fields_reproduced": 10
+    },
+    {
+      "experiment_id": "lag7_release90",
+      "model_id": "geography_ridge",
+      "fields_reproduced": 10
+    },
+    {
+      "experiment_id": "lag7_release90",
+      "model_id": "simple_calls_to_teu",
+      "fields_reproduced": 10
+    },
+    {
+      "experiment_id": "lag14_release60",
+      "model_id": "seasonal_naive",
+      "fields_reproduced": 10
+    },
+    {
+      "experiment_id": "lag14_release60",
+      "model_id": "released_target_ridge",
+      "fields_reproduced": 10
+    },
+    {
+      "experiment_id": "lag14_release60",
+      "model_id": "aggregate_activity_ridge",
+      "fields_reproduced": 10
+    },
+    {
+      "experiment_id": "lag14_release60",
+      "model_id": "geography_ridge",
+      "fields_reproduced": 10
+    },
+    {
+      "experiment_id": "lag14_release60",
+      "model_id": "simple_calls_to_teu",
+      "fields_reproduced": 10
+    },
+    {
+      "experiment_id": "lag14_release90",
+      "model_id": "seasonal_naive",
+      "fields_reproduced": 10
+    },
+    {
+      "experiment_id": "lag14_release90",
+      "model_id": "released_target_ridge",
+      "fields_reproduced": 10
+    },
+    {
+      "experiment_id": "lag14_release90",
+      "model_id": "aggregate_activity_ridge",
+      "fields_reproduced": 10
+    },
+    {
+      "experiment_id": "lag14_release90",
+      "model_id": "geography_ridge",
+      "fields_reproduced": 10
+    },
+    {
+      "experiment_id": "lag14_release90",
+      "model_id": "simple_calls_to_teu",
+      "fields_reproduced": 10
+    },
+    {
+      "experiment_id": "lag28_release60",
+      "model_id": "seasonal_naive",
+      "fields_reproduced": 10
+    },
+    {
+      "experiment_id": "lag28_release60",
+      "model_id": "released_target_ridge",
+      "fields_reproduced": 10
+    },
+    {
+      "experiment_id": "lag28_release60",
+      "model_id": "aggregate_activity_ridge",
+      "fields_reproduced": 10
+    },
+    {
+      "experiment_id": "lag28_release60",
+      "model_id": "geography_ridge",
+      "fields_reproduced": 10
+    },
+    {
+      "experiment_id": "lag28_release60",
+      "model_id": "simple_calls_to_teu",
+      "fields_reproduced": 10
+    },
+    {
+      "experiment_id": "lag28_release90",
+      "model_id": "seasonal_naive",
+      "fields_reproduced": 10
+    },
+    {
+      "experiment_id": "lag28_release90",
+      "model_id": "released_target_ridge",
+      "fields_reproduced": 10
+    },
+    {
+      "experiment_id": "lag28_release90",
+      "model_id": "aggregate_activity_ridge",
+      "fields_reproduced": 10
+    },
+    {
+      "experiment_id": "lag28_release90",
+      "model_id": "geography_ridge",
+      "fields_reproduced": 10
+    },
+    {
+      "experiment_id": "lag28_release90",
+      "model_id": "simple_calls_to_teu",
+      "fields_reproduced": 10
+    }
+  ]
+}

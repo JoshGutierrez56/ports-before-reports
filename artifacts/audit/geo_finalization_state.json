@@ -1,0 +1,23 @@
+{
+  "status": "completed",
+  "completed_at_utc": "2026-10-15T21:43:52.385874+00:00",
+  "source_days": 366,
+  "acceptance_mode": "current_implementation_no_legacy_rebuild",
+  "acceptance_receipt_path": "artifacts/audit/geo_build_acceptance_receipt.json",
+  "acceptance_receipt_sha256": "86be8dcc0d3ea2adf74b75cde8fedf8ef74ea404ab7aa4ac28ea4b39522a4c1d",
+  "measurement_receipt_sha256": "b7757c4c5ea847e8560ae07016035a1309a66c92e316f7cb6c46df865276f25b",
+  "daily_sha256": "70f069619555607c4733dc7ead25b735e29a7773e5e307bc5080030d08549ada",
+  "site_export_sha256": "71d9acfb7a93c26a17fa304296582a924a452b6776394ec897d952f0530b7968",
+  "executed_code_sha256": {
+    "src/scsi/sources/noaa_points.py": "42bed58b335a601ea91770550440e4b1640186f98ad96feeaf5ec4aa15654839",
+    "src/scsi/geo/pipeline.py": "970612d555e37beeeb0992a6b8948bfb7474537a39b8c4d1342d5bab86560470",
+    "src/scsi/geo/geofences.py": "102b33daf34f35e0fceea35912a071456ffae002790f15d1ffc95e47949238f2",
+    "src/scsi/geo/cleaning.py": "8885615592f30034841aa4411e3c95b5e747cfbb4e8a20e4c2e8143560e8b3c5",
+    "src/scsi/geo/episodes.py": "d893a35bcbea241e1a5c0b86ec1f20ae299ec247073068258305a1cf1792939b",
+    "src/scsi/geo/coverage.py": "fb83b65a27881795f705ca3f43e86ab6326c97dcdd7f16fd16d1a51539c12175",
+    "src/scsi/geo/finalize.py": "c81c361a7ae2cf5841feec65311751dac0096e7c1b027f6c49fde067e746c7a4",
+    "src/scsi/features/friction.py": "fd57a0f47875398ed0e426766d071b66224d23ec962c3d944b432a6edc761048"
+  },
+  "pilot_freeze_sha256": "7f12822239292b154051d0ec01716d7320f1511fc54389e015df7b6e4c7bcb30",
+  "audit_sha256": "64f2505b6a0a9629aade14bfae84fbe04f65f98eb91b764256eae12cb87c27ab"
+}

@@ -1,0 +1,44 @@
+{
+  "publication": "PUBLIC_RESEARCH_REPOSITORY",
+  "sources": [
+    {
+      "id": "bts_loaded_imports",
+      "name": "BTS / port-authority loaded-import TEUs",
+      "url": "https://data.bts.gov/resource/y5ut-ibwt.json",
+      "terms_url": "https://www.usa.gov/government-works"
+    },
+    {
+      "id": "portwatch",
+      "name": "Kpler; UN Global Platform; IMF PortWatch",
+      "url": "https://portwatch.imf.org/",
+      "terms_url": "https://www.imf.org/en/about/copyright-and-terms"
+    },
+    {
+      "id": "noaa_points",
+      "name": "NOAA Office for Coastal Management / MarineCadastre",
+      "url": "https://github.com/ocm-marinecadastre/ais-vessel-traffic",
+      "terms_url": "https://github.com/ocm-marinecadastre/ais-vessel-traffic/blob/main/data/ais-broadcast-points-2024-readme.md"
+    }
+  ],
+  "protocol_sha256": "1d853f3d8a9e9185cbaad64b44d20d7630a239c2bf45ac405fd8e90e9400fda0",
+  "measurement_dates": {
+    "start": "2024-01-01",
+    "end": "2024-12-31"
+  },
+  "availability_mode": "retrospective_descriptive",
+  "forecast_availability_mode": "current_vintage_pseudo_realtime",
+  "measurement_receipt_sha256": "b7757c4c5ea847e8560ae07016035a1309a66c92e316f7cb6c46df865276f25b",
+  "snapshot_lineage": "artifacts/audit/geo_measurement_receipt.json",
+  "units": {
+    "vessel_hours": "observed cargo-vessel proxy hours",
+    "queue_stock": "observed queue-candidate count, null when coverage is insufficient",
+    "active_age": "hours observed through cutoff",
+    "friction": "robust standardized index, not hours or TEUs"
+  },
+  "transformation_notes": "Geospatial CSVs are daily aggregates, sensitivity summaries, or measurement-correction comparisons. Raw tracks, vessel identifiers and private trace keys are excluded. January pilot sensitivities remain labeled with their actual source_days; full-year acquisition does not turn them into full-year sensitivities.",
+  "reproduction_scope": "Portable script replays 720 published forecast records and 30 metric rows, not source reacquisition or model refitting.",
+  "repository_url": "https://github.com/JoshGutierrez56/ports-before-reports",
+  "publication_scope": "GitHub research repository only; no portfolio website publication.",
+  "source_bundle_sha256": "ec0a97a4dbd230a6004b38e28c3d826d2691853af009cd7f18688e773b23d84a",
+  "release_note": "Derived from the reviewed source bundle; publication documentation and repository hygiene added. Historical package code and numerical evidence are unchanged."
+}

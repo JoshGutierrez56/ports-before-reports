@@ -1,0 +1,64 @@
+{
+  "status": "executed",
+  "kernel_scope": "ephemeral project-local .venv kernel; no global installation/configuration",
+  "runtime_cleaned": true,
+  "network_acquisition": false,
+  "notebooks": [
+    {
+      "notebook": "01_measurement_audit.ipynb",
+      "status": "executed",
+      "executed_at_utc": "2026-10-15T21:47:13.672228+00:00",
+      "elapsed_seconds": 1.7809999999990396,
+      "source_cells_sha256": "00862a019902ad9e1b6079a56e4e0bc7a3935c4890bb8fa142d12190b5a4b6c4",
+      "input_notebook_sha256": "31e115bee2ce95330b5a498153643fc02856bc860a655146ab98662361c4c993",
+      "executed_notebook_sha256": "0ddfe6a1597930b88c3529bc8797cf2a7f427f3b74a905062b062dd3b522ed2f",
+      "code_cells": 5,
+      "executed_code_cells": 5,
+      "output_objects": 11,
+      "png_outputs": 1,
+      "error_type": null,
+      "input_hashes": {
+        "artifacts/audit/geo_measurement_receipt.json": "b7757c4c5ea847e8560ae07016035a1309a66c92e316f7cb6c46df865276f25b",
+        "artifacts/audit/geo_finalization_state.json": "4933665d04331e819ea6dc17ef82b891db1ed1fb97b5bd435bee08248aad6131",
+        "artifacts/audit/geo_build_acceptance_receipt.json": "86be8dcc0d3ea2adf74b75cde8fedf8ef74ea404ab7aa4ac28ea4b39522a4c1d",
+        "artifacts/audit/geo_pilot_freeze.json": "7f12822239292b154051d0ec01716d7320f1511fc54389e015df7b6e4c7bcb30",
+        "artifacts/audit/geo_daily_features.csv": "70f069619555607c4733dc7ead25b735e29a7773e5e307bc5080030d08549ada",
+        "artifacts/audit/geo_sensitivity.csv": "5c8bab8dd2684f2d2ac65852e7077fb5b4bde51cadd86a47cbb220658f70932c",
+        "artifacts/audit/geo_trajectory_audit.csv": "64f2505b6a0a9629aade14bfae84fbe04f65f98eb91b764256eae12cb87c27ab",
+        "artifacts/audit/geo_map_san_pedro_bay.png": "f7648cb33dd0b95a4152750b036bbfaf26db5c892b4e295369df0800dd2f2520",
+        "data/geography/geofences_v1.geojson": "b62307df88f2aca6ccdc21c273d78c6f16c4ea0148fc4d1f68d10966191b62ed",
+        "src/scsi/geo/pipeline.py": "970612d555e37beeeb0992a6b8948bfb7474537a39b8c4d1342d5bab86560470",
+        "src/scsi/geo/cleaning.py": "8885615592f30034841aa4411e3c95b5e747cfbb4e8a20e4c2e8143560e8b3c5",
+        "src/scsi/geo/geofences.py": "102b33daf34f35e0fceea35912a071456ffae002790f15d1ffc95e47949238f2",
+        "src/scsi/geo/episodes.py": "d893a35bcbea241e1a5c0b86ec1f20ae299ec247073068258305a1cf1792939b",
+        "src/scsi/geo/coverage.py": "fb83b65a27881795f705ca3f43e86ab6326c97dcdd7f16fd16d1a51539c12175",
+        "src/scsi/geo/finalize.py": "c81c361a7ae2cf5841feec65311751dac0096e7c1b027f6c49fde067e746c7a4",
+        "src/scsi/features/friction.py": "fd57a0f47875398ed0e426766d071b66224d23ec962c3d944b432a6edc761048",
+        "data/raw_cropped/noaa-2024-01-01.parquet": "e358b895cd06a52c2acf883cbc140186f4b26be30e9deaedd479c09431073547"
+      }
+    },
+    {
+      "notebook": "02_locked_research.ipynb",
+      "status": "executed",
+      "executed_at_utc": "2026-10-15T21:47:15.837232+00:00",
+      "elapsed_seconds": 2.1570000000028813,
+      "source_cells_sha256": "f4e94084b795ffcd33979d7aac35abdc947873bbc0feab13bee17e4d7a6b5a41",
+      "input_notebook_sha256": "ac64111bb726e678381d393c39c7f50af9c95ef0055c18d665a52a5d067ed881",
+      "executed_notebook_sha256": "d4197cf09e7581cbff8bb4caf36b6dae186ae11dd44ab5792be643534c8a732f",
+      "code_cells": 6,
+      "executed_code_cells": 6,
+      "output_objects": 11,
+      "png_outputs": 3,
+      "error_type": null,
+      "input_hashes": {
+        "artifacts/protocol_lock.json": "1d853f3d8a9e9185cbaad64b44d20d7630a239c2bf45ac405fd8e90e9400fda0",
+        "artifacts/metrics/locked_results.json": "4da0ed5a6fe2c43c58cd2b450d02c671b682c887057b65d2f640e71ae03ebe98",
+        "artifacts/predictions/lag7_release60.json": "884a58ddc2fab72ef23a265aa593af027b5ddd8765e54806cb06997e37c3b75b",
+        "artifacts/audit/independent_research_audit.json": "c1ba828394a37a6015bdb2fc3a90b2bd893823c1ae0b9af2631fc1aaba631537",
+        "artifacts/figures/benchmark_comparison.png": "12412338d2af1db029ba9ed7ff87ae4a74f0003e9bffba18a34acea9b6c9a7db",
+        "artifacts/figures/actual_vs_predicted.png": "ef4cfc45b5991b4bf3902eebc7ea85072b34960da4650d4f52d4af075249ea43",
+        "artifacts/figures/availability_sensitivity.png": "24604d32e0c6b7c60b14b0d853bd9fee67cf27ab6c15e6cb2fbd13d6dd81be90"
+      }
+    }
+  ]
+}

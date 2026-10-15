@@ -1,0 +1,9 @@
+{
+  "raw_rows": 12410114,
+  "valid_rows": 12408103,
+  "invalid_essential": 0,
+  "duplicate_rows": 1432,
+  "conflict_rows": 579,
+  "impossible_jump_rows": 2282,
+  "unknown_speed_rows": 37701
+}

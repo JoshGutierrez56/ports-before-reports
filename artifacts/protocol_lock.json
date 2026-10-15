@@ -1,0 +1,188 @@
+{
+  "created_at_utc": "2026-10-15T20:09:19.085116+00:00",
+  "protocol_version": "1.0",
+  "availability_mode": "current_vintage_pseudo_realtime",
+  "input_hashes": {
+    "data/curated/official_teu_monthly.parquet": "17ff43e2b86552675fe41cc87d2a5db89b99ba8a316283bff5b3acccabf4e373",
+    "data/curated/portwatch_daily.parquet": "f6a5e43ac435c2a0aebed2dd1e0f113ee1fd57f65fbcaff32df9a058ba590419",
+    "RESEARCH_PROTOCOL.md": "4e5e34f3817f97d89a333cac03c8a4e7c7408fd9d25c9fe626e50c4e9d50ecdb",
+    "configs/project.yaml": "514fd50cd40e00d628a281ab204f8bd87743938dc9515e71035d7e58d6579d01",
+    "src/scsi/config.py": "cbc81de515aa7a615a8a44670d02eff65038653e994348c9004c3a0b11daa97b",
+    "src/scsi/features/asof.py": "6a278f626e25c9a0f6cb6760af03605c1f3728503f94e6a0928e9a1f97de7ca5",
+    "src/scsi/features/flow.py": "01590c326043a5ec39904a4df321e7c82061986943fbf37485c862c289babab4",
+    "src/scsi/research/data.py": "31ff794e7da25d612356d111284d768cba35311ed8399b79e4d161bf6eaffd32",
+    "src/scsi/research/models.py": "eada1af8ec957b24e0e7475fc160bf4762ff75c4ae2de924a4fc6a318cc4b315",
+    "src/scsi/research/evaluation.py": "e56a096eb8e8c753bb0e8f0b0597a1bbe1b59c3b1d86cb074650d640f6505f51",
+    "src/scsi/research/bootstrap.py": "6bbbe0b7bd452dff5676e7f2e5bb01020f763faf16c5eb159f62cbced46ebcd5",
+    "src/scsi/research/claims.py": "789ecf3a735337d421e264f66a077fd5d3fd23cc487f20cc6a7ca33cdd9b151b",
+    "src/scsi/research/pipeline.py": "fde9b445fff060665f524822dfab1cd5f034bdace4b9d37e15a9d8bf9f44332c",
+    "data/manifests/source_targets.json": "cde309707b9e06272a4698a4be7555cc88f4a5187b04cceede4f892e5c33d923",
+    "data/manifests/source_flow.json": "90bf21e43c5ec14306aa08ed8288d9117ab1e301147db16d66e862474637b61f",
+    "data/geography/gateway_crosswalk.csv": "aa3b86d1383dfaeb0dc6f3dd4814116899d4b5ed37195b244a79f198254e7063",
+    "data/geography/gateway_crosswalk.parquet": "85af07011416b39005e230b4321cf0fad9692a398b60f75fe8931c450f9965a8"
+  },
+  "validation_selection_sha256": "77c7c1f47bf5ec97f9f18f5a0d49fd513d4f073ab193c5159ea358ba05f5b89a",
+  "measurement_pilot_freeze_sha256": "7f12822239292b154051d0ec01716d7320f1511fc54389e015df7b6e4c7bcb30",
+  "experiments": [
+    {
+      "experiment_id": "lag7_release60",
+      "flow_lag_days": 7,
+      "target_release_lag_days": 60,
+      "gateways": [
+        "san_pedro_bay",
+        "new_york_new_jersey",
+        "savannah"
+      ],
+      "role": "primary",
+      "alphas": {
+        "released_target_ridge": 1.0,
+        "aggregate_activity_ridge": 1.0,
+        "geography_ridge": 1.0
+      },
+      "selected_benchmark": "simple_calls_to_teu"
+    },
+    {
+      "experiment_id": "lag7_release90",
+      "flow_lag_days": 7,
+      "target_release_lag_days": 90,
+      "gateways": [
+        "san_pedro_bay",
+        "new_york_new_jersey",
+        "savannah"
+      ],
+      "role": "reporting_lag_sensitivity",
+      "alphas": {
+        "released_target_ridge": 1.0,
+        "aggregate_activity_ridge": 1.0,
+        "geography_ridge": 1.0
+      },
+      "selected_benchmark": "simple_calls_to_teu"
+    },
+    {
+      "experiment_id": "lag14_release60",
+      "flow_lag_days": 14,
+      "target_release_lag_days": 60,
+      "gateways": [
+        "san_pedro_bay",
+        "new_york_new_jersey",
+        "savannah"
+      ],
+      "role": "reporting_lag_sensitivity",
+      "alphas": {
+        "released_target_ridge": 1.0,
+        "aggregate_activity_ridge": 10.0,
+        "geography_ridge": 10.0
+      },
+      "selected_benchmark": "simple_calls_to_teu"
+    },
+    {
+      "experiment_id": "lag14_release90",
+      "flow_lag_days": 14,
+      "target_release_lag_days": 90,
+      "gateways": [
+        "san_pedro_bay",
+        "new_york_new_jersey",
+        "savannah"
+      ],
+      "role": "reporting_lag_sensitivity",
+      "alphas": {
+        "released_target_ridge": 1.0,
+        "aggregate_activity_ridge": 100.0,
+        "geography_ridge": 10.0
+      },
+      "selected_benchmark": "simple_calls_to_teu"
+    },
+    {
+      "experiment_id": "lag28_release60",
+      "flow_lag_days": 28,
+      "target_release_lag_days": 60,
+      "gateways": [
+        "san_pedro_bay",
+        "new_york_new_jersey",
+        "savannah"
+      ],
+      "role": "reporting_lag_sensitivity",
+      "alphas": {
+        "released_target_ridge": 1.0,
+        "aggregate_activity_ridge": 1.0,
+        "geography_ridge": 1.0
+      },
+      "selected_benchmark": "simple_calls_to_teu"
+    },
+    {
+      "experiment_id": "lag28_release90",
+      "flow_lag_days": 28,
+      "target_release_lag_days": 90,
+      "gateways": [
+        "san_pedro_bay",
+        "new_york_new_jersey",
+        "savannah"
+      ],
+      "role": "reporting_lag_sensitivity",
+      "alphas": {
+        "released_target_ridge": 1.0,
+        "aggregate_activity_ridge": 100.0,
+        "geography_ridge": 1.0
+      },
+      "selected_benchmark": "simple_calls_to_teu"
+    },
+    {
+      "experiment_id": "leave_out_san_pedro_bay",
+      "flow_lag_days": 7,
+      "target_release_lag_days": 60,
+      "gateways": [
+        "new_york_new_jersey",
+        "savannah"
+      ],
+      "role": "changed_target_gateway_exclusion",
+      "alphas": {
+        "released_target_ridge": 10.0,
+        "aggregate_activity_ridge": 1.0,
+        "geography_ridge": 1.0
+      },
+      "selected_benchmark": "released_target_ridge"
+    },
+    {
+      "experiment_id": "leave_out_new_york_new_jersey",
+      "flow_lag_days": 7,
+      "target_release_lag_days": 60,
+      "gateways": [
+        "san_pedro_bay",
+        "savannah"
+      ],
+      "role": "changed_target_gateway_exclusion",
+      "alphas": {
+        "released_target_ridge": 1.0,
+        "aggregate_activity_ridge": 10.0,
+        "geography_ridge": 1.0
+      },
+      "selected_benchmark": "simple_calls_to_teu"
+    },
+    {
+      "experiment_id": "leave_out_savannah",
+      "flow_lag_days": 7,
+      "target_release_lag_days": 60,
+      "gateways": [
+        "san_pedro_bay",
+        "new_york_new_jersey"
+      ],
+      "role": "changed_target_gateway_exclusion",
+      "alphas": {
+        "released_target_ridge": 1.0,
+        "aggregate_activity_ridge": 1.0,
+        "geography_ridge": 10.0
+      },
+      "selected_benchmark": "simple_calls_to_teu"
+    }
+  ],
+  "test_results_opened": false,
+  "test_period": "2024-01/2025-12",
+  "historical_exposure": "General historical knowledge and separately logged 2024 measurement-pilot trajectories; no test forecast metrics inspected before this lock",
+  "bias_correction": "none",
+  "prediction_intervals": "not_provided",
+  "optional_tonnage": "NOT_INCLUDED",
+  "crosswalk_ambiguity_sensitivity": "exclude NYNJ and explicitly change target; same as leave_out_new_york_new_jersey",
+  "time_shift_placebo": "diagnostic_only_future_calls_shifted_28_days; frozen primary alphas; forbidden_production",
+  "common_policy": "all_model_seasonal_fallback_on_incomplete_core_source_window",
+  "primary_metric": "composite_teu_wape"
+}

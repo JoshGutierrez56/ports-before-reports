@@ -1,0 +1,63 @@
+version: 1
+created_before_bulk_acquisition: true
+sources:
+  portwatch:
+    publisher: International Monetary Fund PortWatch
+    status: acquired_7671_gateway_days_9_blackout_nulls
+    seed: https://portwatch.imf.org/datasets/83b1bbc7b3354c5fb1f40673bb8f852e/about
+    terms_url: https://www.imf.org/en/about/copyright-and-terms
+    redistribution: attributed_transformed_aggregates_only_no_raw_export
+    lineage_id: imf_portwatch_ais_estimates
+    resolved_service: https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/Daily_Ports_Data/FeatureServer/0
+    permission_evidence: https://www.arcgis.com/sharing/rest/content/items/640b69a4a96f41a6937cb4d2984f26da/data?f=json
+    access_basis: official_FAQ_explicitly_documents_programmatic_API_retrieval_and_iteration_by_port_id
+    source_port_ids: [port664, port815, port1170]
+    current_schema: date_DateOnly_and_portcalls_container_integer
+    known_blackouts: [2022-05-12, 2023-02-14, 2024-01-09]
+    source_revisions: July_2026_added_tracked_vessels_and_other_methodology_changes_after_test_period
+    required_field: container-specific daily port calls
+    availability: current_vintage_pseudo_realtime
+  bts_monthly_teu:
+    publisher: US Bureau of Transportation Statistics
+    status: rejected_stale_total_TEUs_not_loaded_imports
+    seed: https://data.bts.gov/api/views/rd72-aq8r.json
+    required_fields: monthly import full TEUs for Los Angeles, Long Beach, New York/New Jersey, Savannah
+    availability: current_vintage_pseudo_realtime
+  bts_freight_indicators:
+    publisher: US Bureau of Transportation Statistics
+    status: acquired_336_loaded_import_months_2019_2025
+    seed: https://data.bts.gov/api/views/y5ut-ibwt.json
+    resolved_service: https://data.bts.gov/resource/y5ut-ibwt.json
+    exact_indicator: Loaded Import Containers at Select U.S. Ports in TEUs
+    units: TEUs
+    license: Public_Domain_US_Government
+    terms_url: https://www.usa.gov/government-works
+    historical_first_releases: not_established
+  portwatch_hdx:
+    publisher: OCHA_Centre_for_Humanitarian_Data_PortWatch_organization
+    status: metadata_verified_no_bulk_download_needed_official_API_succeeded
+    lineage_id: imf_portwatch_ais_estimates
+    seed: https://data.humdata.org/dataset/united-states-of-america-daily-port-activity-data-and-shipment-estimates
+    license: Other_IMF_terms_not_CC0
+    terms_url: https://www.imf.org/en/about/copyright-and-terms
+  authority_crosschecks:
+    status: 108_monthly_and_10_annual_source_linked_checks
+    la: HTML_loaded_imports_2019_and_2025_all24_match
+    savannah: GPA_Import_Full_PDF84months_82match_two_small_vintage_differences
+    nynj: 2019_annual_loaded_import_total_exact
+    long_beach: authority_archive_HTTP403_not_bypassed_BTS_exact_series_usable
+    redistribution: raw_authority_pages_and_PDFs_not_publicly_exported
+  bts_operational:
+    publisher: Bureau_of_Transportation_Statistics
+    status: acquired_102_reported_waiting_stock_observations_2024
+    upstream: MARAD_Office_of_Policy_and_Plans_and_Marine_Exchange_of_SoCal
+    gateways: [san_pedro_bay, savannah]
+    units: Number_of_vessels
+    use: descriptive_consistency_only_not_forecast_not_ground_truth
+    berth_duration_2024: HTTP403_not_acquired
+    redistribution: third_party_attribution_retained_raw_export_withheld
+  noaa_points_2024:
+    publisher: NOAA Office for Coastal Management / MarineCadastre
+    status: owned_by_geospatial_agent_see_geo_manifests_for_actual_coverage
+    seed: https://github.com/ocm-marinecadastre/ais-vessel-traffic
+    license: product_specific_CC0_see_NOAA_2024_point_README_and_geo_receipts

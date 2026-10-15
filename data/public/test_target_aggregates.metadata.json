@@ -1,0 +1,57 @@
+{
+  "status": "FROZEN_FORECAST_EVIDENCE",
+  "generated_at_utc": "2026-10-15T20:10:47.223694+00:00",
+  "protocol_sha256": "1d853f3d8a9e9185cbaad64b44d20d7630a239c2bf45ac405fd8e90e9400fda0",
+  "availability_mode": "current_vintage_pseudo_realtime",
+  "measurement_dates": {
+    "flow": "2019-01-01/2025-12-31",
+    "forecast_test": "2024-01/2025-12",
+    "raw_ais": "2024 (see separate completeness receipt)"
+  },
+  "units": {
+    "target": "loaded-import TEUs",
+    "prediction": "loaded-import TEUs",
+    "wape": "fraction",
+    "relative_lift": "fraction"
+  },
+  "sources": [
+    {
+      "id": "bts_loaded_imports",
+      "name": "BTS / port-authority loaded-import TEUs",
+      "url": "https://data.bts.gov/resource/y5ut-ibwt.json",
+      "terms_url": "https://www.usa.gov/government-works"
+    },
+    {
+      "id": "portwatch",
+      "name": "Kpler; UN Global Platform; IMF PortWatch",
+      "url": "https://portwatch.imf.org/",
+      "terms_url": "https://www.imf.org/en/about/copyright-and-terms"
+    },
+    {
+      "id": "noaa_points",
+      "name": "NOAA Office for Coastal Management / MarineCadastre",
+      "url": "https://github.com/ocm-marinecadastre/ais-vessel-traffic",
+      "terms_url": "https://github.com/ocm-marinecadastre/ais-vessel-traffic/blob/main/data/ais-broadcast-points-2024-readme.md"
+    }
+  ],
+  "snapshots": {
+    "source_targets": "bts-target-panel-bc45fb724be79eb2",
+    "source_flow": "portwatch-panel-f399c28303cf1c3a"
+  },
+  "prediction_hashes": {
+    "artifacts/predictions/lag7_release60.json": "884a58ddc2fab72ef23a265aa593af027b5ddd8765e54806cb06997e37c3b75b",
+    "artifacts/predictions/lag7_release90.json": "688e0f811c9b7c7be505572cf0720944c33a4c0f2d56a96a1c868e4e01a44381",
+    "artifacts/predictions/lag14_release60.json": "5ecebb98c2946610e1bb5b0aab3ef7911ada05438766a553cdf3a6bbe11f3979",
+    "artifacts/predictions/lag14_release90.json": "8e174fb9190325d147ab9fbfebd42d8a1f549dd48548ea730b7a2b43fb43054e",
+    "artifacts/predictions/lag28_release60.json": "3ff9b91c9ad79d7cb0ec10b2d08766c913b3b1813b033877f20f03bace60cd20",
+    "artifacts/predictions/lag28_release90.json": "2f37b28e5cc33aea063b6921c9bef50447e6ed7a65eb74df251ab32ebacfbb87",
+    "artifacts/predictions/leave_out_san_pedro_bay.json": "3986443df166230cd4a3eae74091d982c71ed271bf71b816bd8c39b86f8a456b",
+    "artifacts/predictions/leave_out_new_york_new_jersey.json": "71e4cbb097a07c146b211681c89b9a9f54b294826fef9d5caa02ced4626959d5",
+    "artifacts/predictions/leave_out_savannah.json": "837b8acc864811c5310d9ce5201db83f3e5141d10a2ed282271ce2204216731a"
+  },
+  "transformation_notes": "Published model outputs and limited transformed comparisons; full source PortWatch panel and raw vessel positions are not redistributed.",
+  "notes": "BTS public-domain selected-gateway composite; no upstream report images/text copied.",
+  "artifact": "test_target_aggregates.csv",
+  "sha256": "420bac72f47332d6f3ec9b675b9dfae1d523199fa9d3520df5a530b4d0189110",
+  "rows": 24
+}

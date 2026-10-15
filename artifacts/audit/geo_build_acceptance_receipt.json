@@ -1,0 +1,38 @@
+{
+  "completed_at_utc": "2026-10-15T21:43:52.003125+00:00",
+  "acceptance_mode": "current_implementation_no_legacy_rebuild",
+  "measurement_only": true,
+  "thresholds_or_geometry_changed": false,
+  "legacy_outputs_rebuilt": false,
+  "preserved_legacy_artifacts": [],
+  "explanation": "Fresh build or interrupted fresh-build acceptance using the corrected implementation. No historical legacy-output correction is claimed.",
+  "daily_sha256": "70f069619555607c4733dc7ead25b735e29a7773e5e307bc5080030d08549ada",
+  "executed_code_sha256": {
+    "src/scsi/sources/noaa_points.py": "42bed58b335a601ea91770550440e4b1640186f98ad96feeaf5ec4aa15654839",
+    "src/scsi/geo/pipeline.py": "970612d555e37beeeb0992a6b8948bfb7474537a39b8c4d1342d5bab86560470",
+    "src/scsi/geo/geofences.py": "102b33daf34f35e0fceea35912a071456ffae002790f15d1ffc95e47949238f2",
+    "src/scsi/geo/cleaning.py": "8885615592f30034841aa4411e3c95b5e747cfbb4e8a20e4c2e8143560e8b3c5",
+    "src/scsi/geo/episodes.py": "d893a35bcbea241e1a5c0b86ec1f20ae299ec247073068258305a1cf1792939b",
+    "src/scsi/geo/coverage.py": "fb83b65a27881795f705ca3f43e86ab6326c97dcdd7f16fd16d1a51539c12175",
+    "src/scsi/geo/finalize.py": "c81c361a7ae2cf5841feec65311751dac0096e7c1b027f6c49fde067e746c7a4",
+    "src/scsi/features/friction.py": "fd57a0f47875398ed0e426766d071b66224d23ec962c3d944b432a6edc761048"
+  },
+  "operational_comparison": [
+    {
+      "gateway_id": "san_pedro_bay",
+      "matched_dates": 51,
+      "valid_pairs": 49,
+      "noaa_candidate_mean": 3.2857142857142856,
+      "reported_stock_mean": 0.8979591836734694,
+      "comparison": "descriptive stock consistency; different ship population/spatial footprint/time of day; no agreement claim"
+    },
+    {
+      "gateway_id": "savannah",
+      "matched_dates": 51,
+      "valid_pairs": 50,
+      "noaa_candidate_mean": 0.0,
+      "reported_stock_mean": 4.32,
+      "comparison": "descriptive stock consistency; different ship population/spatial footprint/time of day; no agreement claim"
+    }
+  ]
+}

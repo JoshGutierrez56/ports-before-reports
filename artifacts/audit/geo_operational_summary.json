@@ -1,0 +1,18 @@
+[
+  {
+    "gateway_id": "san_pedro_bay",
+    "matched_dates": 51,
+    "valid_pairs": 49,
+    "noaa_candidate_mean": 3.2857142857142856,
+    "reported_stock_mean": 0.8979591836734694,
+    "comparison": "descriptive stock consistency; different ship population/spatial footprint/time of day; no agreement claim"
+  },
+  {
+    "gateway_id": "savannah",
+    "matched_dates": 51,
+    "valid_pairs": 50,
+    "noaa_candidate_mean": 0.0,
+    "reported_stock_mean": 4.32,
+    "comparison": "descriptive stock consistency; different ship population/spatial footprint/time of day; no agreement claim"
+  }
+]

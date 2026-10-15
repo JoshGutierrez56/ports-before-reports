@@ -1,0 +1,91 @@
+{
+  "frozen_at_utc": "2026-10-15T20:06:47.614698+00:00",
+  "source_days": 14,
+  "geospatial": {
+    "publish_crs": "EPSG:4326",
+    "stationary_speed_knots": 1.0,
+    "minimum_state_duration_minutes": 30,
+    "maximum_interpolation_gap_minutes": 30,
+    "geofence_buffer_sensitivity_meters": [
+      0,
+      100,
+      250
+    ],
+    "low_speed_sensitivity_knots": [
+      0.5,
+      1.5
+    ],
+    "gap_sensitivity_minutes": [
+      15,
+      60
+    ],
+    "trailing_standardization_days": 90,
+    "minimum_standardization_days": 30,
+    "retrospective_queue_matching_allowed_in_predictors": false
+  },
+  "initial_geospatial_settings": {
+    "publish_crs": "EPSG:4326",
+    "stationary_speed_knots": 1.0,
+    "minimum_state_duration_minutes": 30,
+    "maximum_interpolation_gap_minutes": 30,
+    "geofence_buffer_sensitivity_meters": [
+      0,
+      100,
+      250
+    ],
+    "low_speed_sensitivity_knots": [
+      0.5,
+      1.5
+    ],
+    "gap_sensitivity_minutes": [
+      15,
+      60
+    ],
+    "trailing_standardization_days": 90,
+    "minimum_standardization_days": 30,
+    "retrospective_queue_matching_allowed_in_predictors": false
+  },
+  "thresholds_changed": false,
+  "geometry_sha256": "b62307df88f2aca6ccdc21c273d78c6f16c4ea0148fc4d1f68d10966191b62ed",
+  "initial_geometry_sha256": "eabf435f711bf090b1eba21176c809e98be6bb6167b6b76c92c675bd7577d65c",
+  "geometry_amendment": "Before freeze: supplement interpreted LA/Savannah corridors with NOAA ENC; replace NY named-terminal hand-locators with NOAA ENC facility perimeters. Documented pilot visual undercoverage; no H1 outcomes.",
+  "decision": "Retain initial 1kn / 30min persistence / 30min max gap; evaluate prespecified one-factor sensitivity separately. No H1 design change.",
+  "exposure": "January 2024 measurement only",
+  "measurement_receipt": {
+    "status": "pilot_measured",
+    "source_days": 14,
+    "expected_days": 366,
+    "cargo_proxy_points": 391982,
+    "candidate_episodes": 1158,
+    "measurement_start": "2024-01-01",
+    "measurement_end": "2024-01-14",
+    "cleaning": {
+      "raw_rows": 392033,
+      "valid_rows": 391982,
+      "invalid_essential": 0,
+      "duplicate_rows": 45,
+      "conflict_rows": 6,
+      "impossible_jump_rows": 61,
+      "unknown_speed_rows": 40
+    },
+    "seconds": 49.81,
+    "geometry_sha256": "b62307df88f2aca6ccdc21c273d78c6f16c4ea0148fc4d1f68d10966191b62ed",
+    "daily_sha256": "4b871b0ffc17d78ef2bc2b608ceded562be2947f188c3aa835d4d8b5aefd57e1",
+    "site_export_sha256": "252b2bacd2e521c324c5d8539bced56a95064b5b9e82747f0319f82d5f2b6412",
+    "audit_rows": 60,
+    "maps": [
+      "geo_map_san_pedro_bay.png",
+      "geo_map_new_york_new_jersey.png",
+      "geo_map_savannah.png"
+    ],
+    "classification": "cargo-vessel proxy",
+    "availability_mode": "retrospective_descriptive",
+    "forecast_design_unchanged": true
+  },
+  "test_receipt_sha256": "dafca5019c2ee05fac6b27e5fd3eec6f68dfc6cabfe690c1cf37d25a820379d7",
+  "source_manifest_sha256": "c3b4cbaf51258d0d2507a844f77c82815c73446e9980d465fc93eb06a129a2f6",
+  "audit_sha256": "64f2505b6a0a9629aade14bfae84fbe04f65f98eb91b764256eae12cb87c27ab",
+  "network_bytes": 3324628521,
+  "free_disk_bytes": 74106179584,
+  "limitations": "Approximate candidate berth/channel functional attribution; current-vintage geometry; missing artificial quay edges; bounded offshore sector; no independent human validation"
+}

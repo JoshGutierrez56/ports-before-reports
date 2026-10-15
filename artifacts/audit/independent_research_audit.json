@@ -1,0 +1,308 @@
+{
+  "created_at_utc": "2026-10-15T21:45:01.144900+00:00",
+  "status": "passed",
+  "scope": "Separate arithmetic verification by an AI agent; not independent human review, model replication or source ground-truth validation",
+  "protocol_sha256": "1d853f3d8a9e9185cbaad64b44d20d7630a239c2bf45ac405fd8e90e9400fda0",
+  "locked_results_sha256": "4da0ed5a6fe2c43c58cd2b450d02c671b682c887057b65d2f640e71ae03ebe98",
+  "audit_script_sha256": "50a518feae02081ca4f81396dd2b6abacdee16acabb8df8961f3899fabc286b5",
+  "prediction_hashes": {
+    "artifacts/predictions/lag7_release60.json": "884a58ddc2fab72ef23a265aa593af027b5ddd8765e54806cb06997e37c3b75b",
+    "artifacts/predictions/lag7_release90.json": "688e0f811c9b7c7be505572cf0720944c33a4c0f2d56a96a1c868e4e01a44381",
+    "artifacts/predictions/lag14_release60.json": "5ecebb98c2946610e1bb5b0aab3ef7911ada05438766a553cdf3a6bbe11f3979",
+    "artifacts/predictions/lag14_release90.json": "8e174fb9190325d147ab9fbfebd42d8a1f549dd48548ea730b7a2b43fb43054e",
+    "artifacts/predictions/lag28_release60.json": "3ff9b91c9ad79d7cb0ec10b2d08766c913b3b1813b033877f20f03bace60cd20",
+    "artifacts/predictions/lag28_release90.json": "2f37b28e5cc33aea063b6921c9bef50447e6ed7a65eb74df251ab32ebacfbb87",
+    "artifacts/predictions/leave_out_san_pedro_bay.json": "3986443df166230cd4a3eae74091d982c71ed271bf71b816bd8c39b86f8a456b",
+    "artifacts/predictions/leave_out_new_york_new_jersey.json": "71e4cbb097a07c146b211681c89b9a9f54b294826fef9d5caa02ced4626959d5",
+    "artifacts/predictions/leave_out_savannah.json": "837b8acc864811c5310d9ce5201db83f3e5141d10a2ed282271ce2204216731a"
+  },
+  "critical_input_hashes_verified": 17,
+  "prediction_records_checked": 1080,
+  "metric_comparisons": [
+    {
+      "experiment_id": "lag7_release60",
+      "model_id": "seasonal_naive",
+      "maximum_absolute_metric_difference": 0
+    },
+    {
+      "experiment_id": "lag7_release60",
+      "model_id": "released_target_ridge",
+      "maximum_absolute_metric_difference": 0
+    },
+    {
+      "experiment_id": "lag7_release60",
+      "model_id": "aggregate_activity_ridge",
+      "maximum_absolute_metric_difference": 0
+    },
+    {
+      "experiment_id": "lag7_release60",
+      "model_id": "geography_ridge",
+      "maximum_absolute_metric_difference": 0
+    },
+    {
+      "experiment_id": "lag7_release60",
+      "model_id": "simple_calls_to_teu",
+      "maximum_absolute_metric_difference": 0
+    },
+    {
+      "experiment_id": "lag7_release90",
+      "model_id": "seasonal_naive",
+      "maximum_absolute_metric_difference": 0
+    },
+    {
+      "experiment_id": "lag7_release90",
+      "model_id": "released_target_ridge",
+      "maximum_absolute_metric_difference": 0
+    },
+    {
+      "experiment_id": "lag7_release90",
+      "model_id": "aggregate_activity_ridge",
+      "maximum_absolute_metric_difference": 0
+    },
+    {
+      "experiment_id": "lag7_release90",
+      "model_id": "geography_ridge",
+      "maximum_absolute_metric_difference": 0
+    },
+    {
+      "experiment_id": "lag7_release90",
+      "model_id": "simple_calls_to_teu",
+      "maximum_absolute_metric_difference": 0
+    },
+    {
+      "experiment_id": "lag14_release60",
+      "model_id": "seasonal_naive",
+      "maximum_absolute_metric_difference": 0
+    },
+    {
+      "experiment_id": "lag14_release60",
+      "model_id": "released_target_ridge",
+      "maximum_absolute_metric_difference": 0
+    },
+    {
+      "experiment_id": "lag14_release60",
+      "model_id": "aggregate_activity_ridge",
+      "maximum_absolute_metric_difference": 0
+    },
+    {
+      "experiment_id": "lag14_release60",
+      "model_id": "geography_ridge",
+      "maximum_absolute_metric_difference": 0
+    },
+    {
+      "experiment_id": "lag14_release60",
+      "model_id": "simple_calls_to_teu",
+      "maximum_absolute_metric_difference": 0
+    },
+    {
+      "experiment_id": "lag14_release90",
+      "model_id": "seasonal_naive",
+      "maximum_absolute_metric_difference": 0
+    },
+    {
+      "experiment_id": "lag14_release90",
+      "model_id": "released_target_ridge",
+      "maximum_absolute_metric_difference": 0
+    },
+    {
+      "experiment_id": "lag14_release90",
+      "model_id": "aggregate_activity_ridge",
+      "maximum_absolute_metric_difference": 0
+    },
+    {
+      "experiment_id": "lag14_release90",
+      "model_id": "geography_ridge",
+      "maximum_absolute_metric_difference": 0
+    },
+    {
+      "experiment_id": "lag14_release90",
+      "model_id": "simple_calls_to_teu",
+      "maximum_absolute_metric_difference": 0
+    },
+    {
+      "experiment_id": "lag28_release60",
+      "model_id": "seasonal_naive",
+      "maximum_absolute_metric_difference": 0
+    },
+    {
+      "experiment_id": "lag28_release60",
+      "model_id": "released_target_ridge",
+      "maximum_absolute_metric_difference": 0
+    },
+    {
+      "experiment_id": "lag28_release60",
+      "model_id": "aggregate_activity_ridge",
+      "maximum_absolute_metric_difference": 0
+    },
+    {
+      "experiment_id": "lag28_release60",
+      "model_id": "geography_ridge",
+      "maximum_absolute_metric_difference": 0
+    },
+    {
+      "experiment_id": "lag28_release60",
+      "model_id": "simple_calls_to_teu",
+      "maximum_absolute_metric_difference": 0
+    },
+    {
+      "experiment_id": "lag28_release90",
+      "model_id": "seasonal_naive",
+      "maximum_absolute_metric_difference": 0
+    },
+    {
+      "experiment_id": "lag28_release90",
+      "model_id": "released_target_ridge",
+      "maximum_absolute_metric_difference": 0
+    },
+    {
+      "experiment_id": "lag28_release90",
+      "model_id": "aggregate_activity_ridge",
+      "maximum_absolute_metric_difference": 0
+    },
+    {
+      "experiment_id": "lag28_release90",
+      "model_id": "geography_ridge",
+      "maximum_absolute_metric_difference": 2.9103830456733704e-11
+    },
+    {
+      "experiment_id": "lag28_release90",
+      "model_id": "simple_calls_to_teu",
+      "maximum_absolute_metric_difference": 2.9103830456733704e-11
+    },
+    {
+      "experiment_id": "leave_out_san_pedro_bay",
+      "model_id": "seasonal_naive",
+      "maximum_absolute_metric_difference": 0
+    },
+    {
+      "experiment_id": "leave_out_san_pedro_bay",
+      "model_id": "released_target_ridge",
+      "maximum_absolute_metric_difference": 0
+    },
+    {
+      "experiment_id": "leave_out_san_pedro_bay",
+      "model_id": "aggregate_activity_ridge",
+      "maximum_absolute_metric_difference": 0
+    },
+    {
+      "experiment_id": "leave_out_san_pedro_bay",
+      "model_id": "geography_ridge",
+      "maximum_absolute_metric_difference": 0
+    },
+    {
+      "experiment_id": "leave_out_san_pedro_bay",
+      "model_id": "simple_calls_to_teu",
+      "maximum_absolute_metric_difference": 0
+    },
+    {
+      "experiment_id": "leave_out_new_york_new_jersey",
+      "model_id": "seasonal_naive",
+      "maximum_absolute_metric_difference": 0
+    },
+    {
+      "experiment_id": "leave_out_new_york_new_jersey",
+      "model_id": "released_target_ridge",
+      "maximum_absolute_metric_difference": 0
+    },
+    {
+      "experiment_id": "leave_out_new_york_new_jersey",
+      "model_id": "aggregate_activity_ridge",
+      "maximum_absolute_metric_difference": 0
+    },
+    {
+      "experiment_id": "leave_out_new_york_new_jersey",
+      "model_id": "geography_ridge",
+      "maximum_absolute_metric_difference": 2.9103830456733704e-11
+    },
+    {
+      "experiment_id": "leave_out_new_york_new_jersey",
+      "model_id": "simple_calls_to_teu",
+      "maximum_absolute_metric_difference": 1.4551915228366852e-11
+    },
+    {
+      "experiment_id": "leave_out_savannah",
+      "model_id": "seasonal_naive",
+      "maximum_absolute_metric_difference": 0
+    },
+    {
+      "experiment_id": "leave_out_savannah",
+      "model_id": "released_target_ridge",
+      "maximum_absolute_metric_difference": 0
+    },
+    {
+      "experiment_id": "leave_out_savannah",
+      "model_id": "aggregate_activity_ridge",
+      "maximum_absolute_metric_difference": 0
+    },
+    {
+      "experiment_id": "leave_out_savannah",
+      "model_id": "geography_ridge",
+      "maximum_absolute_metric_difference": 0
+    },
+    {
+      "experiment_id": "leave_out_savannah",
+      "model_id": "simple_calls_to_teu",
+      "maximum_absolute_metric_difference": 0
+    }
+  ],
+  "primary_bootstrap_comparisons": [
+    {
+      "comparator": "aggregate_activity_ridge",
+      "block_months": 3,
+      "replicates": 10000,
+      "valid_replicates": 10000,
+      "lower": -0.23275520519610146,
+      "upper": 0.30933903475455404,
+      "maximum_endpoint_difference": 0.0
+    },
+    {
+      "comparator": "aggregate_activity_ridge",
+      "block_months": 6,
+      "replicates": 10000,
+      "valid_replicates": 10000,
+      "lower": -0.281781533997409,
+      "upper": 0.2522069225926157,
+      "maximum_endpoint_difference": 2.220446049250313e-16
+    },
+    {
+      "comparator": "simple_calls_to_teu",
+      "block_months": 3,
+      "replicates": 10000,
+      "valid_replicates": 10000,
+      "lower": -1.1787112294821183,
+      "upper": -0.2100898571477897,
+      "maximum_endpoint_difference": 0.0
+    },
+    {
+      "comparator": "simple_calls_to_teu",
+      "block_months": 6,
+      "replicates": 10000,
+      "valid_replicates": 10000,
+      "lower": -1.1541923877270395,
+      "upper": -0.37015575307929277,
+      "maximum_endpoint_difference": 0.0
+    }
+  ],
+  "training_month_release_checks": 50865,
+  "serialized_ridge_predictions_reconstructed": 579,
+  "maximum_ridge_prediction_difference_teu": 4.656612873077393e-10,
+  "common_fallback_and_target_pairing": "passed across all nine experiments",
+  "independent_claim_status": "PROMISING_BUT_UNCERTAIN",
+  "retuning_or_data_mutation": false,
+  "critical_leakage_findings": [],
+  "limitations": [
+    "No historical first-release snapshots: release lags are assumptions, not proof of historical availability.",
+    "July 2026 PortWatch revisions affect the current-vintage 2019-2025 reconstruction.",
+    "Only 24 test months; 1080 forecasts across overlapping experiments are not 1080 independent observations.",
+    "NOAA 2024 cargo-proxy measurements are separate descriptive evidence, never a forecast regressor.",
+    "Temporal receipts and coefficient reconstruction do not independently re-train or certify every source observation.",
+    "Historical market knowledge and measurement-pilot exposure mean this is not globally unseen or prospective research."
+  ],
+  "resource_review": {
+    "audit_elapsed_seconds": 1.1719999999986612,
+    "audit_rss_bytes": 100896768,
+    "free_disk_bytes_at_audit": 68495077376,
+    "audit_processing": "One process; BLAS thread settings 1; 40,000 scalar bootstrap draws; no network or NOAA full-year load",
+    "whole_project_resource_enforcement": "Reviewed configured 48 GiB RAM / 80 GiB project / 16 GiB raw cache / 20 GiB free reserve / 200 GiB network caps; this audit is not a full-run peak-memory monitor"
+  }
+}

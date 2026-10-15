@@ -1,0 +1,103 @@
+{
+  "created_at_utc": "2026-10-15T20:10:22.415295+00:00",
+  "future_append_tests": {
+    "fallback_origin_invariant": true,
+    "valid_origin_invariant": true,
+    "valid_origin_parameters_invariant": true
+  },
+  "valid_test_origin": "2024-03",
+  "lag_and_target_release_checks": [
+    "lag7_release60",
+    "lag7_release90",
+    "lag14_release60",
+    "lag14_release90",
+    "lag28_release60",
+    "lag28_release90"
+  ],
+  "leave_one_out_changed_targets": [
+    "leave_out_san_pedro_bay",
+    "leave_out_new_york_new_jersey",
+    "leave_out_savannah"
+  ],
+  "ambiguity_exclusion": "leave_out_new_york_new_jersey",
+  "optional_tonnage": {
+    "status": "NOT_APPLICABLE",
+    "reason": "No tonnage feature was included in the frozen primary or optional model"
+  },
+  "gateway_target_concentration": {
+    "san_pedro_bay": 0.5821049899690081,
+    "new_york_new_jersey": 0.2582297617386008,
+    "savannah": 0.15966524829239112
+  },
+  "time_shift_placebo": {
+    "forbidden_in_production": true,
+    "metrics": [
+      {
+        "model_id": "seasonal_naive",
+        "n_months": 24,
+        "wape": 0.11226039576528177,
+        "mae": 162176.9625,
+        "rmse": 185903.7408200388,
+        "bias": -115338.13333333335,
+        "direction_accuracy": 0.0,
+        "fallback_rate": 0.08333333333333333,
+        "source_coverage_rate": 0.9166666666666666,
+        "denominator_teu": 34671596.1,
+        "total_origins": 24
+      },
+      {
+        "model_id": "released_target_ridge",
+        "n_months": 24,
+        "wape": 0.08457526600281201,
+        "mae": 122181.64428748166,
+        "rmse": 156867.4147811106,
+        "bias": 832.764154878057,
+        "direction_accuracy": 0.7083333333333334,
+        "fallback_rate": 0.08333333333333333,
+        "source_coverage_rate": 0.9166666666666666,
+        "denominator_teu": 34671596.1,
+        "total_origins": 24
+      },
+      {
+        "model_id": "aggregate_activity_ridge",
+        "n_months": 24,
+        "wape": 0.09571533593816713,
+        "mae": 138275.14450933106,
+        "rmse": 187046.05924511657,
+        "bias": 99250.82894744088,
+        "direction_accuracy": 0.7083333333333334,
+        "fallback_rate": 0.08333333333333333,
+        "source_coverage_rate": 0.9166666666666666,
+        "denominator_teu": 34671596.1,
+        "total_origins": 24
+      },
+      {
+        "model_id": "geography_ridge",
+        "n_months": 24,
+        "wape": 0.09087301107784426,
+        "mae": 131279.68068674344,
+        "rmse": 173571.0602855189,
+        "bias": 98519.40335021114,
+        "direction_accuracy": 0.75,
+        "fallback_rate": 0.08333333333333333,
+        "source_coverage_rate": 0.9166666666666666,
+        "denominator_teu": 34671596.1,
+        "total_origins": 24
+      },
+      {
+        "model_id": "simple_calls_to_teu",
+        "n_months": 24,
+        "wape": 0.05543909728258639,
+        "mae": 80090.08288043512,
+        "rmse": 98331.31998456708,
+        "bias": -10910.159740881005,
+        "direction_accuracy": 0.75,
+        "fallback_rate": 0.08333333333333333,
+        "source_coverage_rate": 0.9166666666666666,
+        "denominator_teu": 34671596.1,
+        "total_origins": 24
+      }
+    ]
+  },
+  "geometry_sensitivity": "Separate measurement audit; never used to retune H1"
+}
